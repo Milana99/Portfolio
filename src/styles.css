@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Playfair Display", serif;
+
+}
+
+.mySpeech {
+    font-family: "Caveat", cursive;
 }
 
 #mainDiv {
     padding: 0;
 }
 
+.page {
+    height: 100vh;
+}
+
 /*NAVBAR*/
 #navbar {
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #2F2F2F;
     width: 100%;
+    position: fixed;
+}
+
+#milana {
+    display: none;
 }
 
 #navbarNav {
@@ -35,5 +54,75 @@
     font-weight: 300;
     font-style: normal;
     margin: auto;
+
+}
+
+/*FIRST PAGE*/
+#fp {
+    background-color: #ebe7e781;
+
+}
+
+#fp .row {
+    height: 100%;
+}
+
+#fp-fc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 10vh;
+}
+
+#fp-fc h1 {
+    font-family: "Playfair Display", serif;
+    color: #DCBCBA;
+}
+
+#fp a {
+    color: white;
+    background-color: #2F2F2F;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+}
+
+#fp a * {
+    color: white;
+}
+
+#fp-sc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+
+}
+
+#fp-sc img {
+    width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    #milana {
+        display: contents;
+        font-size: larger;
+        color: #F8EBEA;
+    }
+
+    #fp-sc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #milana {
+        display: contents;
+        font-size: larger;
+        color: #F8EBEA;
+    }
+
 
 }

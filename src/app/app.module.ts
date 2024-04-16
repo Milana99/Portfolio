@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SecoundPageComponent } from './core/secound-page/secound-page.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
