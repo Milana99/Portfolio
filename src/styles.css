@@ -6,10 +6,9 @@
     padding: 0;
     margin: 0;
     font-family: "Playfair Display", serif;
-
 }
 
-.mySpeech {
+#mySpeech {
     font-family: "Caveat", cursive;
 }
 
@@ -17,8 +16,13 @@
     padding: 0;
 }
 
-.page {
+.page1 {
     height: 100vh;
+}
+
+.page {
+    height: 90vh;
+
 }
 
 /*NAVBAR*/
@@ -28,6 +32,7 @@
     background-color: #2F2F2F;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 #milana {
@@ -59,7 +64,7 @@
 
 /*FIRST PAGE*/
 #fp {
-    background-color: #ebe7e781;
+    background-color: #F8F8F8;
 
 }
 
@@ -105,6 +110,39 @@
     width: 80%;
 }
 
+/*SECOUND PAGE*/
+
+#sp-fr {
+    padding: 5vh;
+    text-align: center;
+}
+
+.sp-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-c .card {
+    background-color: #f8ebeac2;
+    border: 0px solid #2F2F2F;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+.sp-c .card .card-body .card-title {
+    text-align: center;
+}
+
+.sp-c img {
+    height: 10vh;
+    width: auto;
+    align-self: center;
+    margin-top: 10px;
+}
+
+
+
 @media screen and (max-width: 600px) {
     #milana {
         display: contents;
@@ -115,6 +153,10 @@
     #fp-sc {
         display: none;
     }
+
+    .sp-c {
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -123,6 +165,5 @@
         font-size: larger;
         color: #F8EBEA;
     }
-
 
 }

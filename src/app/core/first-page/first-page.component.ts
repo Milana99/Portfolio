@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-first-page',
   templateUrl: './first-page.component.html',
   styleUrls: ['./first-page.component.css']
 })
-export class FirstPageComponent {
+export class FirstPageComponent implements OnInit {
+
+  ngOnInit(): void {
+  }
+
 
 }
