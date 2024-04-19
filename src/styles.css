@@ -16,12 +16,8 @@
     padding: 0;
 }
 
-.page1 {
-    height: 100vh;
-}
-
 .page {
-    height: 90vh;
+    height: 95vh;
 
 }
 
@@ -63,6 +59,10 @@
 }
 
 /*FIRST PAGE*/
+.page1 {
+    height: 100vh;
+}
+
 #fp {
     background-color: #F8F8F8;
 
@@ -91,6 +91,7 @@
     width: 120px;
     height: 40px;
     border: 0px;
+    border-radius: 0%;
 }
 
 #fp a * {
@@ -113,8 +114,13 @@
 /*SECOUND PAGE*/
 
 #sp-fr {
-    padding: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
     text-align: center;
+}
+
+#sp-fr #mySpeech {
+    color: #DCBCBA;
 }
 
 .sp-c {
@@ -128,6 +134,7 @@
     border: 0px solid #2F2F2F;
     border-radius: 0%;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 5px #2F2F2F;
 }
 
 .sp-c .card .card-body .card-title {
@@ -141,9 +148,77 @@
     margin-top: 10px;
 }
 
+.card li {
+    background-color: rgba(0, 0, 0, 0.855);
+    color: #F8EBEA;
+}
+
+/*THIRD PAGE*/
+
+#tp {
+    background-color: #f8ebea73;
+}
+
+#tp>.row {
+    height: 100%;
+}
+
+#tp-fc h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#tp-fc-sr #sr-fc {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tp-fc-sr #sr-sc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tp-sc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #2F2F2F;
+    padding: 0;
+}
+
+#tp-sc h1 {
+    color: white;
+    font-size: 90px;
+    margin-top: 260px;
+    letter-spacing: 30px;
+    transform: rotate(90deg);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #141212c2;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #DCBCBA;
+}
+
+input[type="range"] {
+    pointer-events: none;
+}
+
+
 
 
 @media screen and (max-width: 600px) {
+    .page {
+        height: 180vh;
+    }
+
     #milana {
         display: contents;
         font-size: larger;
