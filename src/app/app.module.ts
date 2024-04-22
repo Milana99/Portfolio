@@ -7,6 +7,7 @@ import { SecoundPageComponent } from './core/secound-page/secound-page.component
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ThirdPageComponent } from './core/third-page/third-page.component';
+import { FourthPageComponent } from './core/fourth-page/fourth-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ThirdPageComponent } from './core/third-page/third-page.component';
     FirstPageComponent,
     SecoundPageComponent,
     NavBarComponent,
-    ThirdPageComponent
+    ThirdPageComponent,
+    FourthPageComponent
   ],
   imports: [
     BrowserModule,

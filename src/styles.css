@@ -30,7 +30,7 @@
     background-color: #2F2F2F;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
 }
 
 #milana {
@@ -134,7 +134,7 @@
 
 .sp-c .card {
     background-color: #f8ebeac2;
-    border: 3px solid #2F2F2F;
+    border: 0px solid #2F2F2F;
     border-radius: 0px;
     margin-bottom: 10px;
     box-shadow: 1px 1px 5px #2F2F2F;
@@ -222,6 +222,32 @@ input[type="range"] {
     pointer-events: none;
 }
 
+/*FOURTH PAGE*/
+
+
+#fop h1 {
+    font-size: 90px;
+    text-align: center;
+}
+
+#projects {
+    margin-top: 10vh;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: #2F2F2F;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    color: #F8EBEA;
+}
+
+.project img {
+    width: 90%;
+}
 
 
 
@@ -290,5 +316,4 @@ input[type="range"] {
     #tp-sc h1 {
         font-size: 70px;
     }
-
 }
