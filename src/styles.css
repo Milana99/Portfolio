@@ -229,20 +229,32 @@ input[type="range"] {
     text-align: center;
 }
 
-#projects {
-    margin-top: 10vh;
+.fop-c {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.project {
+#projects {
+    margin-top: 5vh;
+}
+
+#projects .col {
+    display: flex;
+    justify-content: center;
+}
+
+#fop .project {
     display: flex;
     flex-direction: column;
     background-color: #2F2F2F;
-    margin: 10px;
     text-align: center;
     align-items: center;
     padding-bottom: 30px;
     color: #F8EBEA;
     box-shadow: 2px 1px 5px #2F2F2F;
+    border-radius: 0%;
+    margin-bottom: 10px;
 }
 
 .project img {
@@ -250,8 +262,6 @@ input[type="range"] {
 }
 
 /*FIFTH PAGE*/
-
-
 
 #fip-fr {
     display: flex;
@@ -276,7 +286,12 @@ input[type="range"] {
 #cn-details #mySpeech {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+#cn-details p {
+    width: 350px;
+    font-size: 14px;
 }
 
 #fip-fr img {
@@ -289,6 +304,9 @@ input[type="range"] {
 #fip-fr .form-group {
     margin-top: 10px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #fip a {
@@ -298,18 +316,48 @@ input[type="range"] {
     height: 40px;
     border: 0px;
     border-radius: 0%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #fip-sr {
     background-color: #2F2F2F;
 }
 
+/*FOOTER*/
+#footer {
+    height: 70px;
+    background-color: #2F2F2F;
+    color: #F8EBEA;
+}
+
+#footer .ft-fr {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer .ft-fr * {
+    display: flex;
+    align-items: center;
+
+}
+
+#footer .ft-fr small {
+    width: 170px;
+}
+
+#footer .btn {
+    color: #F8EBEA;
+}
+
 
 
 
 @media screen and (max-width: 600px) {
-    .page {
+
+    #sp,
+    #fop {
         height: fit-content;
 
     }
@@ -356,10 +404,22 @@ input[type="range"] {
 
     #tp-fc-sr #tr-sc {
         justify-content: start;
-
         margin-top: -60px;
         margin-bottom: 0px;
         z-index: 1;
+    }
+
+    #cn-details {
+        margin-left: -30px;
+    }
+
+    #fip-fr img {
+        display: none;
+
+    }
+
+    #footer .ft-fr small {
+        width: 100px;
     }
 }
 
@@ -374,4 +434,29 @@ input[type="range"] {
         font-size:
             70px;
     }
+
+    #cn-details {
+        height: 80vh;
+        width: 60vh;
+        transform: translate(30px, 0px);
+
+    }
+
+
+    #cn-details p {
+        width: 300px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #fip-fr img {
+        width: 40vh;
+    }
+
+    #fip-fr .form-group * {
+        width: 250px;
+        font-size: small;
+    }
+
+
 }
