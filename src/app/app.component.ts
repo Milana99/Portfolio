@@ -1,5 +1,6 @@
-import { Component, ElementRef, HostListener, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-
+import { AfterViewInit, Component, ElementRef, HostListener, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import Typed from 'typed.js';
+import { FunctionsService } from './services/functions.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,38 +8,49 @@ import { Component, ElementRef, HostListener, Input, OnChanges, OnInit, SimpleCh
 })
 export class AppComponent implements OnInit {
 
-  title = 'Portfolio';
-
+  activePage = {
+    fpActive: false,
+    spActive: false,
+    tpActive: false,
+    fopActive: false,
+    fipActive: false
+  }
   activeSection: string | null = null;
 
-  constructor(private el: ElementRef<HTMLElement>) { }
+  constructor(private el: ElementRef<HTMLElement>, private functions: FunctionsService) { }
 
   ngOnInit(): void {
-    this.navbarActiveItem()
+    this.activateNavbarItem()
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
-    this.navbarActiveItem()
+    this.activateNavbarItem()
+    this.findActivePage()
   }
 
-  navbarActiveItem() {
+  private activateNavbarItem() {
     const sections: NodeListOf<HTMLElement> = document.querySelectorAll('section');
     const scrollPosition: number = window.scrollY;
-    this.activeSectionCalculate(sections, scrollPosition);
+    this.activeSection = this.functions.calculateActiveSection(sections, scrollPosition);
   }
 
-  activeSectionCalculate(sections: NodeListOf<HTMLElement>, scrollPosition: number) {
-    sections.forEach((section: HTMLElement) => {
-      const top: number = section.offsetTop - 300;
-      const bottom: number = top + section.offsetHeight;
-      const sectionId: string | null = section.getAttribute('id');
-
-      if (sectionId && scrollPosition >= top && scrollPosition < bottom) {
-        this.activeSection = sectionId;
-
-      }
-    });
+  private findActivePage() {
+    switch (this.activeSection) {
+      case 'sfp': this.activePage.fpActive = true;
+        break;
+      case 'ssp': this.activePage.spActive = true;
+        break;
+      case 'stp': this.activePage.tpActive = true;
+        break;
+      case 'sfop': this.activePage.fopActive = true;
+        break;
+      case 'sfip': this.activePage.fipActive = true;
+        break;
+      default:
+        return;
+    }
   }
+
 }
 

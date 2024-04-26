@@ -8,8 +8,9 @@
     font-family: "Playfair Display", serif;
 }
 
-#mySpeech {
+.mySpeech {
     font-family: "Caveat", cursive;
+    height: 50px;
 }
 
 #mainDiv {
