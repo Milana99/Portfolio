@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
+import { FunctionsService } from 'src/app/services/functions.service';
 
 @Component({
   selector: 'app-first-page',
@@ -9,6 +10,7 @@ export class FirstPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 
 }

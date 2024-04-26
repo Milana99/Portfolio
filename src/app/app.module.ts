@@ -9,7 +9,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ThirdPageComponent } from './core/third-page/third-page.component';
 import { FourthPageComponent } from './core/fourth-page/fourth-page.component';
 import { FifthPageComponent } from './core/fifth-page/fifth-page.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [

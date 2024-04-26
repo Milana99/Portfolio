@@ -1,22 +1,22 @@
 <div class="container-fluid" id="mainDiv">
   <div class="row">
-    <app-nav-bar></app-nav-bar>
+    <app-nav-bar [activatePage]="activeSection"></app-nav-bar>
   </div>
-  <div class="row" style="margin: 0;">
+  <section id="sfp" class="row" style="margin: 0;">
     <app-first-page style="padding: 0;"></app-first-page>
-  </div>
-  <div class="row" style="margin: 0;">
+  </section>
+  <section id="ssp" class="row" style="margin: 0;">
     <app-secound-page style="padding: 0;"></app-secound-page>
-  </div>
-  <div class="row" style="margin: 0;">
+  </section>
+  <section id="stp" class="row" style="margin: 0;">
     <app-third-page style="padding: 0;"></app-third-page>
-  </div>
-  <div class="row" style="margin: 0;">
+  </section>
+  <section id="sfop" class="row" style="margin: 0;">
     <app-fourth-page style="padding: 0;"></app-fourth-page>
-  </div>
-  <div class="row" style="margin: 0;">
+  </section>
+  <section id="sfip" class="row" style="margin: 0;">
     <app-fifth-page style="padding: 0;"></app-fifth-page>
-  </div>
+  </section>
   <div class="row" style="margin: 0;">
     <app-footer style="padding: 0;"></app-footer>
   </div>

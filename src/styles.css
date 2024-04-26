@@ -60,6 +60,16 @@
 
 }
 
+#navbarUl li :hover {
+    color: #DCBCBA;
+}
+
+#navbarUl li .active {
+    color: #DCBCBA;
+    border-bottom: 2px solid #DCBCBA;
+    /* Promeni boju na željenu */
+}
+
 /*FIRST PAGE*/
 .page1 {
     height: 100vh;

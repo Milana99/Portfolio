@@ -6,20 +6,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto" id="navbarUl">
-            <li class="nav-item active">
-                <a class="nav-link" href="#fp">HOME </a>
+            <li class="nav-item">
+                <a [ngClass]="{'active': activatePage == 'sfp'}" class="nav-link" href="#fp">HOME </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#sp">ABOUT</a>
+                <a [ngClass]="{'active': activatePage == 'ssp'}" class="nav-link" href="#sp">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#tp">SKILLS</a>
+                <a [ngClass]="{'active': activatePage == 'stp'}" class="nav-link" href="#tp">SKILLS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#fop">PROJECTS</a>
+                <a [ngClass]="{'active': activatePage == 'sfop'}" class="nav-link" href="#fop">PROJECTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#fip">CONTACT</a>
+                <a [ngClass]="{'active': activatePage == 'sfip'}" class="nav-link" href="#fip">CONTACT</a>
             </li>
         </ul>
 
