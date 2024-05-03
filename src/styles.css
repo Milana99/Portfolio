@@ -22,6 +22,15 @@
     padding-top: 10vh;
 }
 
+section {
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
 
 
 /*NAVBAR*/
@@ -105,6 +114,10 @@
     height: 40px;
     border: 0px;
     border-radius: 0%;
+}
+
+#fp a:hover {
+    box-shadow: 5px 5px 0px 0px #828282;
 }
 
 #fp a * {

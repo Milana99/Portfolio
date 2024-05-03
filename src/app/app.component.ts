@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
     fipActive: false
   }
   activeSection: string | null = null;
+  renderer: any;
 
   constructor(private el: ElementRef<HTMLElement>, private functions: FunctionsService) { }
 

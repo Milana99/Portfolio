@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Renderer2 } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FirstPageComponent } from './core/first-page/first-page.component';
 import { AppRoutingModule } from './app-routing.module';

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import Typed from 'typed.js';
 
 @Injectable({
@@ -6,7 +6,11 @@ import Typed from 'typed.js';
 })
 export class FunctionsService {
 
-  constructor() { }
+  private renderer: Renderer2;
+
+  constructor(rendererFactory: RendererFactory2) {
+    this.renderer = rendererFactory.createRenderer(null, null);
+  }
 
   startTypingEffect(text: string, HTMLElementID: string) {
     const options = {
@@ -27,7 +31,11 @@ export class FunctionsService {
 
       if (sectionId && scrollPosition >= top && scrollPosition < bottom) {
         activeSection = sectionId;
+        this.renderer.removeClass(section, "hidden");
       }
+      //else {
+      //this.renderer.addClass(section, "hidden");
+      //} 
 
     });
     return activeSection;
