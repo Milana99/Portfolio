@@ -142,8 +142,12 @@ section {
 
 #sp-fr {
     padding-top: 5vh;
-    padding-bottom: 10vh;
     text-align: center;
+}
+
+#sp-sr {
+    height: 80%;
+
 }
 
 #sp-fr #mySpeech {
@@ -161,23 +165,36 @@ section {
     border: 0px solid #2F2F2F;
     border-radius: 0px;
     margin-bottom: 10px;
-    box-shadow: 1px 1px 5px #2F2F2F;
+
 }
 
 .sp-c .card .card-body .card-title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .sp-c img {
     height: 10vh;
     width: auto;
     align-self: center;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.card li {
-    background-color: #2F2F2F;
+.card #accordion {
+    background-color: #202020;
     color: #F8EBEA;
+}
+
+.card #accordion .card-item .card-header {
+    background-color: #2F2F2F;
+    border-bottom: 0.5px solid #F8EBEA
+}
+
+.card #accordion .card-item .card-header button {
+    color: #F8EBEA;
+    text-decoration: none;
 }
 
 /*THIRD PAGE*/
