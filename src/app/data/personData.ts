@@ -8,7 +8,7 @@ export const PERSON =
         {
             "id": "1",
             "title": "education",
-            "picture": "",
+            "picture": "education",
             "items": [
                 {
                     "id": "11",
@@ -31,7 +31,7 @@ export const PERSON =
         {
             "id": "2",
             "title": "interests",
-            "picture": "",
+            "picture": "interests",
             "items": [
                 {
                     "id": "21",
@@ -54,7 +54,7 @@ export const PERSON =
         {
             "id": "3",
             "title": "languages",
-            "picture": "",
+            "picture": "languages",
             "items": [
                 {
                     "id": "31",

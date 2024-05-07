@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ItemOfAboutItem } from 'src/app/model/ItemOfAboutItem';
+import { FunctionsService } from 'src/app/services/functions.service';
 
 @Component({
   selector: 'app-card-item',
@@ -12,17 +13,15 @@ export class CardItemComponent implements OnInit {
   @Input()
   cardItemParentId = ""
 
-  constructor() {
+  constructor(private functions: FunctionsService) {
 
   }
 
   ngOnInit(): void {
-    this.cardItem.name = this.capitalizeFirstLetter(this.cardItem.name)
+    this.cardItem.name = this.functions.capitalizeFirstLetter(this.cardItem.name)
   }
 
-  capitalizeFirstLetter(word: string) {
-    return word[0].toUpperCase() + word.slice(1);
-  }
+
 
 
 
