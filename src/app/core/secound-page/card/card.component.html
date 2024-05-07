@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">
+            <img class="card-img-top" src="assets/images/education.png" alt="Card image cap">
+            {{aboutItem.title}}
+        </h5>
+        <p class="card-text"></p>
+    </div>
+    <div class="accordion" id="accordion{{aboutItem.id}}">
+        <div class="card-item" *ngFor="let i of aboutItem.items">
+            <app-card-item [cardItemParentId]="aboutItem.id" [cardItem]="i"></app-card-item>
+        </div>
+    </div>
+</div>

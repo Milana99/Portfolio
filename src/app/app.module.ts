@@ -10,6 +10,8 @@ import { ThirdPageComponent } from './core/third-page/third-page.component';
 import { FourthPageComponent } from './core/fourth-page/fourth-page.component';
 import { FifthPageComponent } from './core/fifth-page/fifth-page.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { CardComponent } from './core/secound-page/card/card.component';
+import { CardItemComponent } from './core/secound-page/card/card-item/card-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './core/footer/footer.component';
     ThirdPageComponent,
     FourthPageComponent,
     FifthPageComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent,
+    CardItemComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ export class PersonService {
     this.person.name = PERSON.name.toUpperCase();
     this.person.occupation = PERSON.occupation;
     this.person.description = PERSON.description;
+    this.person.about = PERSON.about;
   }
 
   readPerson(): Person {

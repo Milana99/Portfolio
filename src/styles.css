@@ -157,7 +157,7 @@ section {
 .sp-c {
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .sp-c .card {
@@ -182,17 +182,17 @@ section {
     margin-top: 10px;
 }
 
-.card #accordion {
+.card .accordion {
     background-color: #202020;
     color: #F8EBEA;
 }
 
-.card #accordion .card-item .card-header {
+.card .accordion .card-item .card-header {
     background-color: #2F2F2F;
     border-bottom: 0.5px solid #F8EBEA
 }
 
-.card #accordion .card-item .card-header button {
+.card .accordion .card-item .card-header button {
     color: #F8EBEA;
     text-decoration: none;
 }
