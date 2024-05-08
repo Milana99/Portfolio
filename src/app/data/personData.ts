@@ -13,7 +13,7 @@ export const PERSON =
                 {
                     "id": "11",
                     "name": "high school",
-                    "description": ["Computing Sciences", `Gymnasium Smart, "Novi Sad"`, "2014-2018", "Computer Science Track"],
+                    "description": ["Computing Sciences", `Gymnasium "Smart", Novi Sad`, "2014-2018", "Computer Science Track"],
                 },
                 {
                     "id": "12",
@@ -23,7 +23,7 @@ export const PERSON =
                 {
                     "id": "13",
                     "name": "course",
-                    "description": ["Front-End Development course", "FTN informatika, Novi Sad", "2023-2024", "Angular Front-End Developer"]
+                    "description": ["Front-End Development course", "FTN Informatika, Novi Sad", "2023-2024", "Angular Front-End Developer"]
                 }
             ],
 
@@ -59,7 +59,7 @@ export const PERSON =
                 {
                     "id": "31",
                     "name": "serbian",
-                    "description": ["native or Bilingual Proficiency", "5/5"]
+                    "description": ["Native or Bilingual Proficiency", "5/5"]
                 },
                 {
                     "id": "32",
