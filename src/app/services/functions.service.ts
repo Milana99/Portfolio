@@ -45,4 +45,25 @@ export class FunctionsService {
     return word[0].toUpperCase() + word.slice(1);
   }
 
+  animateRange(selectedValue: any, rangeElement: any, rangeInput: any) {
+    this.renderer.setProperty(rangeInput?.nativeElement, 'value', 0);
+
+    const targetValue = rangeElement.percentage;
+
+    const steps = 100;
+    const duration = 3000;
+    const stepValue = targetValue / steps;
+    const interval = duration / steps;
+
+    let currentValue = 0;
+    const intervalId = setInterval(() => {
+      currentValue += stepValue;
+      selectedValue = currentValue;
+      this.renderer.setProperty(rangeInput?.nativeElement, 'value', currentValue);
+
+      if (currentValue >= targetValue) {
+        clearInterval(intervalId);
+      }
+    }, interval);
+  }
 }

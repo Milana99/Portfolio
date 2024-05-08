@@ -91,11 +91,7 @@ export const PERSON =
             "percentage": 85
         },
         {
-            "name": "C",
-            "percentage": 80
-        },
-        {
-            "name": "C++",
+            "name": "C/C++",
             "percentage": 80
         },
         {

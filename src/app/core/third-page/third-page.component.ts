@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnChanges, Renderer2, RendererFactory2, SimpleChanges, ViewChild } from '@angular/core';
 import { PLanguage } from 'src/app/model/pLanguage';
 import { Person } from 'src/app/model/person';
 import { FunctionsService } from 'src/app/services/functions.service';
@@ -17,7 +17,7 @@ export class ThirdPageComponent implements OnChanges {
   programmingLanguages: PLanguage[] = []
   person = new Person;
 
-  constructor(private functions: FunctionsService, private personService: PersonService) {
+  constructor(private functions: FunctionsService, private personService: PersonService, rendererFactory: RendererFactory2) {
     this.person = personService.readPerson();
     this.programmingLanguages = this.person.programmingLanguages;
   }
@@ -25,7 +25,5 @@ export class ThirdPageComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (this.tpActive == true)
       this.functions.startTypingEffect('...and something about my...', '#mySpeech3')
-
   }
-
 }

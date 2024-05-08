@@ -12,6 +12,7 @@ import { FifthPageComponent } from './core/fifth-page/fifth-page.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { CardComponent } from './core/secound-page/card/card.component';
 import { CardItemComponent } from './core/secound-page/card/card-item/card-item.component';
+import { RangeComponent } from './core/third-page/range/range.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardItemComponent } from './core/secound-page/card/card-item/card-item.
     FifthPageComponent,
     FooterComponent,
     CardComponent,
-    CardItemComponent
+    CardItemComponent,
+    RangeComponent
   ],
   imports: [
     BrowserModule,

@@ -13,8 +13,7 @@
                 </h1>
                 <div class="col" id="tr-sc">
                     <div *ngFor="let l of programmingLanguages">
-                        <label for="html" class="form-label">{{l.name}}</label>
-                        <input type="range" min="0" max="100" value="{{l.percentage}}" class="form-range" id="html">
+                        <app-range [rangeElement]="l" [tpActive]="tpActive"></app-range>
                     </div>
 
                 </div>
