@@ -72,6 +72,8 @@ section {
 
 #navbarUl li :hover {
     color: #DCBCBA;
+    cursor: pointer;
+
 }
 
 #navbarUl li .active {
