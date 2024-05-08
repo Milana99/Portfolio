@@ -12,23 +12,11 @@
                     SKILLS
                 </h1>
                 <div class="col" id="tr-sc">
-                    <label for="html" class="form-label">HTML/CSS</label>
-                    <input type="range" min="0" max="100" value="90" class="form-range" id="html">
+                    <div *ngFor="let l of programmingLanguages">
+                        <label for="html" class="form-label">{{l.name}}</label>
+                        <input type="range" min="0" max="100" value="{{l.percentage}}" class="form-range" id="html">
+                    </div>
 
-                    <label for="angular" class="form-label">ANGULAR</label>
-                    <input type="range" min="0" max="100" value="80" class="form-range" id="angular">
-
-                    <label for="javascript" class="form-label">JAVASCRIPT</label>
-                    <input type="range" min="0" max="100" value="85" class="form-range" id="angular">
-
-                    <label for="java" class="form-label">JAVA</label>
-                    <input type="range" min="0" max="100" value="75" class="form-range" id="java">
-
-                    <label for="c" class="form-label">C</label>
-                    <input type="range" min="0" max="100" value="70" class="form-range" id="c">
-
-                    <label for="cplusplus" class="form-label">C++</label>
-                    <input type="range" min="0" max="100" value="75" class="form-range" id="cplusplus">
                 </div>
             </div>
         </div>

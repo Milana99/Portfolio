@@ -68,5 +68,39 @@ export const PERSON =
                 }
             ]
         }
+    ],
+    "programmingLanguages": [
+        {
+            "name": "HTML/CSS",
+            "percentage": 95
+        },
+        {
+            "name": "TypeScript",
+            "percentage": 85
+        },
+        {
+            "name": "Angular Framework",
+            "percentage": 85
+        },
+        {
+            "name": "Java",
+            "percentage": 80
+        },
+        {
+            "name": ".NET",
+            "percentage": 85
+        },
+        {
+            "name": "C",
+            "percentage": 80
+        },
+        {
+            "name": "C++",
+            "percentage": 80
+        },
+        {
+            "name": "SQL",
+            "percentage": 75
+        }
     ]
 }

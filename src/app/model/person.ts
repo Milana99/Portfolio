@@ -1,4 +1,5 @@
 import { AboutItem } from "./aboutItem";
+import { PLanguage } from "./pLanguage";
 
 export class Person {
     id: number;
@@ -6,6 +7,7 @@ export class Person {
     occupation: string;
     description: string;
     about: AboutItem[];
+    programmingLanguages: PLanguage[];
 
 
     constructor(obj?: any) {
@@ -14,5 +16,6 @@ export class Person {
         this.occupation = obj && obj.occupation || "";
         this.description = obj && obj.description || "";
         this.about = obj && obj.about && obj.about.map((elem: any) => new AboutItem(elem));
+        this.programmingLanguages = obj && obj.programmingLanguages && obj.programmingLanguages.map((elem: any) => new PLanguage(elem));
     }
 }
