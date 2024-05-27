@@ -172,7 +172,7 @@ section {
 }
 
 .sp-c .card {
-    background-color: #f8ebeac2;
+    background-color: #f8ebea90;
     border: 0px solid #2F2F2F;
     border-radius: 0px;
     box-shadow: 1px 1px 3px 0px #828282;
@@ -266,12 +266,25 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    background-color: #DCBCBA;
+    background-color: #ebd4d2;
 }
 
 input[type="range"] {
     pointer-events: none;
 }
+
+.range-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.range-row p {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: large;
+}
+
 
 /*FOURTH PAGE*/
 

@@ -16,6 +16,7 @@ export class PersonService {
     this.person.description = PERSON.description;
     this.person.about = PERSON.about;
     this.person.programmingLanguages = PERSON.programmingLanguages;
+    this.person.projects = PERSON.projects;
   }
 
   readPerson(): Person {

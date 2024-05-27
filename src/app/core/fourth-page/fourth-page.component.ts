@@ -1,5 +1,8 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
-
+import { AfterViewInit, Component, ElementRef, OnChanges, Renderer2, RendererFactory2, SimpleChanges, ViewChild } from '@angular/core';
+import { Person } from 'src/app/model/person';
+import { Project } from 'src/app/model/project';
+import { PersonService } from 'src/app/services/personService/person.service';
+declare var $: any;
 @Component({
   selector: 'app-fourth-page',
   templateUrl: './fourth-page.component.html',
@@ -7,7 +10,17 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class FourthPageComponent implements OnChanges {
 
-  ngOnChanges(changes: SimpleChanges): void {
-    
+  person: Person = new Person()
+  projects: Project[] = []
+
+  constructor(private service: PersonService) {
+    this.person = service.readPerson();
+    this.projects = this.person.projects;
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+
+  }
+
+
 }

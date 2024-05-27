@@ -5,51 +5,8 @@
         </h1>
     </div>
     <div class="row" id="projects">
-
-        <div class="col-sm-3 fop-c ">
-            <div class="card project" style="width: 16rem;">
-                <div class="card-body">
-                    <h3 class="card-title">NAME</h3>
-                    <p class="card-text"></p>
-                </div>
-                <img src="/assets/images/fp-img.jpg">
-
-            </div>
+        <div class="col-sm-3 " *ngFor="let p of projects">
+            <app-project-card [project]="p"></app-project-card>
         </div>
-
-        <div class="col-sm-3 fop-c ">
-            <div class="card project" style="width: 16rem;">
-                <div class="card-body">
-                    <h3 class="card-title">NAME</h3>
-                    <p class="card-text"></p>
-                </div>
-                <img src="/assets/images/fp-img.jpg">
-
-            </div>
-        </div>
-
-        <div class="col-sm-3 fop-c ">
-            <div class="card project" style="width: 16rem;">
-                <div class="card-body">
-                    <h3 class="card-title">NAME</h3>
-                    <p class="card-text"></p>
-                </div>
-                <img src="/assets/images/fp-img.jpg">
-
-            </div>
-        </div>
-
-        <div class="col-sm-3 fop-c">
-            <div class="card project" style="width: 16rem;">
-                <div class="card-body">
-                    <h3 class="card-title">NAME</h3>
-                    <p class="card-text"></p>
-                </div>
-                <img src="/assets/images/fp-img.jpg">
-
-            </div>
-        </div>
-
-
     </div>
 </div>

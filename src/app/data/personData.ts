@@ -98,5 +98,29 @@ export const PERSON =
             "name": "SQL",
             "percentage": 75
         }
+    ],
+    "projects": [
+        {
+            "name": "Cinema Web Application",
+            "image": "",
+            "description": ""
+        },
+        {
+            "name": "Hospital Desktop Application",
+            "image": "",
+            "description": ""
+        },
+        {
+            "name": "Desktop Application for Bus Station",
+            "image": "",
+            "description": ""
+        },
+        {
+            "name": "Portfolio Web Application",
+            "image": "",
+            "description": ""
+        }
+
     ]
+
 }

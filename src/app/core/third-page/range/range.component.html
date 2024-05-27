@@ -1,3 +1,8 @@
-<label for="html" class="form-label">{{rangeElement.name}}</label>
-<input type="range" min="0" max="100" value="{{rangeElement.percentage}}" class="form-range" id="html" [max]="maxValue"
-    #rangeInput>
+<div class="range-col">
+    <label for="html" class="form-label">{{rangeElement.name}}</label>
+    <div class="range-row">
+        <input type="range" min="0" max="100" [(ngModel)]="selectedValue" class=" form-range" id="html" [max]="maxValue"
+            #rangeInput>
+        <p>{{selectedValue}}%</p>
+    </div>
+</div>

@@ -13,26 +13,32 @@ import { FooterComponent } from './core/footer/footer.component';
 import { CardComponent } from './core/secound-page/card/card.component';
 import { CardItemComponent } from './core/secound-page/card/card-item/card-item.component';
 import { RangeComponent } from './core/third-page/range/range.component';
+import { FormsModule } from '@angular/forms';
+import { ProjectCardComponent } from './core/fourth-page/project-card/project-card.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FirstPageComponent,
-    SecoundPageComponent,
-    NavBarComponent,
-    ThirdPageComponent,
-    FourthPageComponent,
-    FifthPageComponent,
-    FooterComponent,
-    CardComponent,
-    CardItemComponent,
-    RangeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        FirstPageComponent,
+        SecoundPageComponent,
+        NavBarComponent,
+        ThirdPageComponent,
+        FourthPageComponent,
+        FifthPageComponent,
+        FooterComponent,
+        CardComponent,
+        CardItemComponent,
+        RangeComponent,
+        ProjectCardComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        CarouselModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
